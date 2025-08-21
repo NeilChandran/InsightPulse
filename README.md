@@ -19,7 +19,6 @@ Upload your data, ask questions in plain English, and receive instant analytics,
 
 ## 🏗️ Architecture Overview
 
-text
           +-------------------+
           |    Web App/API    |  <-- main.py
           +-------------------+
@@ -49,23 +48,6 @@ text
      | Report Generator (PDF/HTML)    |
      | report_generator.py            |
      +--------------------------------+
-text
-
----
-
-## 📦 Project Structure
-
-.
-├── main.py # FastAPI backend & routes
-├── nlp_query_engine.py # Natural-language query → DataFrame logic
-├── data_visualizer.py # Charting (matplotlib/seaborn)
-├── action_recommender.py # Data-driven strategy suggestions
-├── report_generator.py # Creates PDF reports w/ insights, charts
-├── test_pipeline.py # Demo & pipeline tests
-├── static/ # Saved charts and reports
-├── uploaded_data/ # User uploads
-└── README.md
-
 
 ---
 
@@ -78,14 +60,13 @@ cd InsightPulse
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 
-text
 
 2. **Run Dev Server**
 
 python main.py
 
 Visit http://localhost:8000/
-text
+
 
 3. **Upload Your Data & Query**
 
